@@ -1,0 +1,15 @@
+.header {
+  text-align: center;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: aquamarine;
+}
