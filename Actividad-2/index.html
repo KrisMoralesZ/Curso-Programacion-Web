@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Ciclo for
+      for (let i = 0; i < 10; i++) {
+        console.log(i);
+      }
+
+      // Ciclo while
+      let contador = 0;
+      while (contador < 10) {
+        console.log(contador);
+        contador++;
+      }
+
+      // // Ciclo do-while
+      let contadorDoWhile = 0;
+      do {
+        console.log(contadorDoWhile);
+        contadorDoWhile++;
+      } while (contadorDoWhile < 10);
+
+      // Control de flujo con if-else
+      let numero = 0;
+      if (numero > 0) {
+        console.log("El número es positivo");
+      } else if (numero < 0) {
+        console.log("El número es negativo");
+      } else {
+        console.log("El número es cero");
+      }
+
+      // Control de flujo con switch
+      let dia = "Jueves";
+      switch (dia) {
+        case "Lunes":
+          console.log("Hoy es lunes");
+          break;
+        case "Martes":
+          console.log("Hoy es martes");
+          break;
+        case "Miércoles":
+          console.log("Hoy es miércoles");
+          break;
+        default:
+          console.log("No es un día válido");
+      }
+
+      // Uso de Functions
+      function saludar(nombre) {
+        return `Hola, ${nombre}!`;
+      }
+      console.log(saludar("Mauricio"));
+
+      // Uso de Arrays
+      let frutas = ["Manzana", "Banana", "Naranja"];
+      console.log(frutas[2]); // Naranja
+      console.log(frutas.length); // 3
+
+      // Uso de Objetos
+      let persona = {
+        nombre: "Juan Carlos",
+        edad: 25,
+        saludar: function () {
+          return `Hola, soy ${this.nombre} y tengo ${this.edad} años.`;
+        },
+      };
+      console.log(persona.saludar());
+    </script>
+  </body>
+</html>
