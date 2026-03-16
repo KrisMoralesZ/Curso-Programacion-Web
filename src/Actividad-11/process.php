@@ -46,7 +46,10 @@ $stmt = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, 
 $stmt->bind_param("sss", $name, $email, $hashed_password);
 
 if ($stmt->execute()) {
-  echo 'User registered successfully!';
+  $stmt->close();
+  $conn->close();
+  header('Location: Users-Table/index.php');
+  exit;
 } else {
   echo 'Error: ' . $stmt->error;
 }
